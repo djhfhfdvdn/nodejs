@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft Yahei", sans-serif;
+}
+
+body {
+  padding: 40px;
+  background-color: #fff;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #333;
+}
+
+.bill-list {
+  max-width: 900px;
+}
+
+.bill-item {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.bill-date {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+/* 支出日期栏粉色 */
+.bill-item.expense .bill-date {
+  background-color: #f8d7da;
+}
+/* 收入日期栏浅绿色 */
+.bill-item.income .bill-date {
+  background-color: #d1e7dd;
+}
+
+.bill-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+
+.bill-desc {
+  font-size: 16px;
+}
+
+.bill-type {
+  padding: 4px 12px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+}
+.expense .bill-type {
+  background-color: #fd7e14;
+}
+.income .bill-type {
+  background-color: #198754;
+}
+
+.bill-money {
+  font-size: 16px;
+  color: #333;
+}
+
+.delete-btn {
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+  padding: 0 10px;
+}
+.delete-btn:hover {
+  color: red;
+}

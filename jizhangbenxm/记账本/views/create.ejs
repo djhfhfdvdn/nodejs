@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>添加记录</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="add-container">
+        <h1>添加记录</h1>
+        <form  method="post" action="/account">
+            <div class="form-item">
+                <label>事项</label>
+                <input type="text" name="item" required>
+            </div>
+            <div class="form-item">
+                <label>发生时间</label>
+                <input type="date" name="time" required>
+            </div>
+            <div class="form-item">
+                <label>类型</label>
+                <select name="type" required>
+                    <option value="-1">支出</option>
+                    <option value="+1">收入</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label>金额</label>
+                <input type="number" name="account" required>
+            </div>
+            <div class="form-item">
+                <label>备注</label>
+                <textarea name="desc"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">添加</button>
+        </form>
+    </div>
+    <script src="/add.js"></script>
+</body>
+</html>

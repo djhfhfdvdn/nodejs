@@ -1,0 +1,25 @@
+
+        table {
+            border-collapse: collapse; /* 合并边框 */
+            width: 600px;
+            margin: 30px auto;
+        }
+        td {
+            border: 1px solid #333;
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        /* 隔行换色：偶数行背景浅灰 */
+        tr:nth-child(even) {
+            background-color: #eeeeee;
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        /* 点击单元格高亮样式 */
+        td.active {
+            background-color: #409eff !important;
+            color: #fff;
+        }
